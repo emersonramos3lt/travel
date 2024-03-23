@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+header h1 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+    transition: .2s ease;
+}
+
+header h1 a:hover {
+    color: #555;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #mainMenu {
+    display: flex;
+    list-style-type: none;
+}
+
+nav #mainMenu li a {
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: #000;
+    transition: .2 ease;
+}
+
+nav #mainMenu li a:hover {
+    color: #555;
+}
+
+nav #openMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+nav #mainMenu #closeMenu {
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+
+nav a:hover {
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    visibility: hidden;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+}
+
+nav a:hover::before {
+    position: absolute;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+}
+
+section h1 {
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo {
+    border-bottom: 2px solid #000;
+}
+
+section p {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+section .icon-email {
+    color: #000;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+
+section .icon-email:hover {
+    color: #555;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.grid-main img {
+    width: 500px;
+    margin-bottom: 2rem;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.grid-main h1 a {
+    font-size: 3rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.grid-main h1 a:hover {
+    text-decoration: underline;
+}
+
+.grid-main img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.grid-other {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.grid-other img {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.grid-other img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.grid-other h2 a {
+    color: #000;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.grid-other h2 a:hover {
+    text-decoration: underline;
+}
+
+.fundo {
+    background-color: antiquewhite;
+}
+
+.email {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    height: 40vh;
+}
+
+.email p {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.email a {
+    text-decoration: underline;
+    color: #000;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    transition: all .3s;
+}
+
+.email a:hover {
+    color: #555;
+}
+
+.redes {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    height: 30vh;
+}
+
+.redes h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.redes p a {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #000;
+    transition: all .3s;
+}
+
+.redes p a:hover {
+    color: #555;
+}
+
+.fundo-footer {
+    background-color: #0F1F16;
+}
+
+footer {
+    padding: 0.2rem;
+    max-width: 1000px;
+    margin: auto;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+footer p a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #fff;
+    transition: all .2s;
+}
+
+footer p a:hover {
+    color: #555;
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+    nav #mainMenu {
+        height: 100vh;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        transition: top 1s ease 0s;
+        z-index: 1000;
+    }
+
+    nav #mainMenu #closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav #openMenu {
+        display: block;
+    }
+
+    nav #mainMenu li {
+        margin-bottom: 2rem;
+    }
+
+    nav #mainMenu li a {
+        font-size: 3.5rem;
+    }
+
+    section {
+        max-width: 350px;
+    }
+    
+    section h1 {
+        font-size: 2.5rem;
+    }
+    
+    section p {
+        font-size: 1rem;
+    }
+    
+    section .icon-email {
+        font-size: 1.3rem;
+    }
+    
+    section .icon-email:hover {
+        color: #555;
+    }
+    
+    .grid-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    .grid-main img {
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        margin-bottom: 0;
+    }
+    
+    .grid-main h1 a {
+        font-size: 2rem;
+    }
+    
+    .grid-other {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.8rem;
+    }
+    
+    .grid-other img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+    }
+
+    .grid-other div {
+        border-bottom: 2px solid #222;
+    }
+    
+    .grid-other h2 a {
+        color: #000;
+        font-size: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+    }
+    
+    .grid-other h2 a:hover {
+        text-decoration: underline;
+    }
+
+    .email {
+        max-width: 350px;
+        height: 30vh;
+    }
+    
+    .email p {
+        font-size: 1.2rem;
+    }
+    
+    .email a {
+        font-size: 1.2rem;
+    }
+    
+    .email a:hover {
+        color: #555;
+    }
+    
+    .redes {
+        max-width: 350px;
+    }
+    
+    .redes h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+    }
+    
+    footer {
+        max-width: 350px;
+    }
+}
