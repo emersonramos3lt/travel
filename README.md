@@ -12,3 +12,9 @@ and other important techniques.
 
 ## Home Page
 ![Screenshot](./imagens/screenshot.PNG)
+
+## Section
+![Screenshot](./imagens/screenshot-2.PNG)
+
+## Service Page
+![Screenshot](./imagens/screenshot-3.PNG)
