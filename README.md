@@ -7,7 +7,7 @@ and other important techniques.
 - **HTML and CSS**
 - **JavaScript**
 - **Motion design**
-- **Responsive menu and design
+- **Responsive menu and design**
 
 # Project Screenshots
 
