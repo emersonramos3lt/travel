@@ -12,10 +12,10 @@ and other important techniques.
 # Project Screenshots
 
 ## Home Page
-![Screenshot](./imagens/screenshot.PNG)
+![Screenshot](./screenshot/screenshot.PNG)
 
 ## Section
-![Screenshot](./imagens/screenshot-2.PNG)
+![Screenshot](./screenshot/screenshot-2.PNG)
 
 ## Service Page
-![Screenshot](./imagens/screenshot-3.PNG)
+![Screenshot](./screenshot/screenshot-3.PNG)
