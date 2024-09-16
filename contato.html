@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Travel</title>
+
+    <link rel="stylesheet" href="./style/contato.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <header>
+        <a class="header-a" href="index.html">Travel</a>
+
+        <nav>
+            <div id="openMenu"><i class="fa-solid fa-bars"></i></div>
+            <ul id="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contato.html">Contact</a></li>
+                <li><a href="service.html">Service</a></li>
+
+                <div id="closeMenu"><i class="fa-solid fa-circle-xmark"></i></div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+
+        <p>We are here to help you plan the trip of your dreams! If you have any questions, suggestions, or need any assistance, don't hesitate to contact us. Our team of experts is available to answer your questions and provide all the necessary information.</p>
+
+        <form action="">
+
+           <div>
+            <label for="nome">Name (required)</label>
+            <input type="text" id="nome" required>
+           </div>
+
+           <div>
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" required>
+           </div>
+
+            <textarea name="mensagem" id="mensagem" placeholder="Enter your message here" required></textarea>
+
+            <button type="submit" id="mySubmit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p class="copyright">All rights reserved &copy;Travel</p>
+
+        <p>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+    
+           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    
+           <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </p>
+
+    </footer>
+
+    <script src="./javascript/contato.js"></script>
+</body>
+</html>
